@@ -18,13 +18,13 @@ export default function RootLayout({ children }) {
 
   const footer = (
     <footer className = {'p-4 sm:p-8'}>
-      footer
+      Made with ❤️ @ <a className="textGradient" href=" https://github.com/itmesneha/learnup">LearnUp</a> 
     </footer>
   )
 
   return (
     <html lang="en">
-      <body className={'w-full max-w-[1000px] mx-auto text-sm sm:text-base min-h-screen flex flex-col ' + inter.className}> 
+      <body className={'w-full max-w-[1000px] mx-auto text-sm sm:text-base min-h-screen flex flex-col text-slate-600 ' + inter.className}> 
        {header}
         {children}
         {footer}
