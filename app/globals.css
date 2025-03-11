@@ -7,3 +7,21 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.bgGradient { /* For general background gradient */
+    background: linear-gradient(to left, #574dc4, #98a1f7);
+    color:white;
+  }
+
+.iconButton {
+    display: flex;          /* Make the button a flex container */
+    align-items: center;    /* Vertically center icon and text */
+  }
+  
+.iconButton > :first-child { /* Select the first child (icon) */
+    margin-right: 0.6rem;  /* Add margin between icon and text */
+  }
+  
+.iconButton > :last-child {  /* Select the last child (text) */
+    text-align: center;    /* Center the text */
+  }

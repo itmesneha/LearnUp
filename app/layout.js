@@ -11,11 +11,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const header = (
-    <header className = {'p-4 sm:p-8 flex items-center justify-between gap-4'}>
-      <h1 className = {'text-base sm:text-lg textGradient ' + fugaz.className}>LearnUp</h1>
-    </header>
-  )
+  
 
   const footer = (
     <footer className = {'p-4 sm:p-8 grid place-items-center'}> 
@@ -29,7 +25,6 @@ export default function RootLayout({ children }) {
       <body className={'w-screen w-full text-sm sm:text-base min-h-screen flex text-slate-600 ' + inter.className}> 
         <Sidebar />
         <div className = {'flex flex-col flex-1 p-4 sm:p-8'}>
-        {header}
         {children}
         {footer}
         </div>
